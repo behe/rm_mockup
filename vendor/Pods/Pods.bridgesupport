@@ -1,0 +1,231 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<enum name='MBProgressHUDAnimationFade' value='0'/>
+<enum name='MBProgressHUDAnimationZoom' value='1'/>
+<enum name='MBProgressHUDModeAnnularDeterminate' value='2'/>
+<enum name='MBProgressHUDModeCustomView' value='3'/>
+<enum name='MBProgressHUDModeDeterminate' value='1'/>
+<enum name='MBProgressHUDModeIndeterminate' value='0'/>
+<enum name='MBProgressHUDModeText' value='4'/>
+<class name='MBProgressHUD'>
+<method class_method='true' selector='HUDForView:'>
+<arg index='0' name='view' type='@' declared_type='UIView*'/>
+<retval type='@' declared_type='MBProgressHUD*'/>
+</method>
+<method class_method='true' selector='allHUDsForView:'>
+<arg index='0' name='view' type='@' declared_type='UIView*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='animationType'>
+<retval type='i' declared_type='MBProgressHUDAnimation'/>
+</method>
+<method selector='customView'>
+<retval type='@' declared_type='UIView*'/>
+</method>
+<method selector='delegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='detailsLabelFont'>
+<retval type='@' declared_type='UIFont*'/>
+</method>
+<method selector='detailsLabelText'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='dimBackground'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='graceTime'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='hide:'>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='hide:afterDelay:'>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='delay' type='d' declared_type='NSTimeInterval'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='hideAllHUDsForView:animated:'>
+<arg index='0' name='view' type='@' declared_type='UIView*'/>
+<arg index='1' name='animated' type='B' declared_type='BOOL'/>
+<retval type='I' declared_type='NSUInteger'/>
+</method>
+<method class_method='true' selector='hideHUDForView:animated:'>
+<arg index='0' name='view' type='@' declared_type='UIView*'/>
+<arg index='1' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='initWithView:'>
+<arg index='0' name='view' type='@' declared_type='UIView*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='initWithWindow:'>
+<arg index='0' name='window' type='@' declared_type='UIWindow*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isSquare'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='labelFont'>
+<retval type='@' declared_type='UIFont*'/>
+</method>
+<method selector='labelText'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='margin'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='minShowTime'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='minSize'>
+<retval type='{CGSize=ff}' declared_type='CGSize'/>
+</method>
+<method selector='mode'>
+<retval type='i' declared_type='MBProgressHUDMode'/>
+</method>
+<method selector='opacity'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='progress'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='removeFromSuperViewOnHide'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setAnimationType:'>
+<arg index='0' name='animationType' type='i' declared_type='MBProgressHUDAnimation'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCustomView:'>
+<arg index='0' name='customView' type='@' declared_type='UIView*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDelegate:'>
+<arg index='0' name='delegate' type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDetailsLabelFont:'>
+<arg index='0' name='detailsLabelFont' type='@' declared_type='UIFont*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDetailsLabelText:'>
+<arg index='0' name='detailsLabelText' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDimBackground:'>
+<arg index='0' name='dimBackground' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setGraceTime:'>
+<arg index='0' name='graceTime' type='f' declared_type='float'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLabelFont:'>
+<arg index='0' name='labelFont' type='@' declared_type='UIFont*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLabelText:'>
+<arg index='0' name='labelText' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMargin:'>
+<arg index='0' name='margin' type='f' declared_type='float'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMinShowTime:'>
+<arg index='0' name='minShowTime' type='f' declared_type='float'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMinSize:'>
+<arg index='0' name='minSize' type='{CGSize=ff}' declared_type='CGSize'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMode:'>
+<arg index='0' name='mode' type='i' declared_type='MBProgressHUDMode'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setOpacity:'>
+<arg index='0' name='opacity' type='f' declared_type='float'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setProgress:'>
+<arg index='0' name='progress' type='f' declared_type='float'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setRemoveFromSuperViewOnHide:'>
+<arg index='0' name='removeFromSuperViewOnHide' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSquare:'>
+<arg index='0' name='square' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTaskInProgress:'>
+<arg index='0' name='taskInProgress' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setXOffset:'>
+<arg index='0' name='xOffset' type='f' declared_type='float'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setYOffset:'>
+<arg index='0' name='yOffset' type='f' declared_type='float'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='show:'>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='showHUDAddedTo:animated:'>
+<arg index='0' name='view' type='@' declared_type='UIView*'/>
+<arg index='1' name='animated' type='B' declared_type='BOOL'/>
+<retval type='@' declared_type='MBProgressHUD*'/>
+</method>
+<method selector='showWhileExecuting:onTarget:withObject:animated:'>
+<arg index='0' name='method' type=':' declared_type='SEL'/>
+<arg index='1' name='target' type='@' declared_type='id'/>
+<arg index='2' name='object' type='@' declared_type='id'/>
+<arg index='3' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='taskInProgress'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='xOffset'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='yOffset'>
+<retval type='f' declared_type='float'/>
+</method>
+</class>
+<class name='MBRoundProgressView'>
+<method selector='isAnnular'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='progress'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='setAnnular:'>
+<arg index='0' name='annular' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setProgress:'>
+<arg index='0' name='progress' type='f' declared_type='float'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='hudWasHidden:'>
+<arg index='0' name='hud' type='@' declared_type='MBProgressHUD*'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<informal_protocol name='MBProgressHUDDelegate'>
+<method type='v12@0:4@8' selector='hudWasHidden:'>
+<arg index='0' name='hud' type='@' declared_type='MBProgressHUD*'/>
+<retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+</signatures>

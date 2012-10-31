@@ -1,0 +1,5 @@
+PODS:
+  - MBProgressHUD (0.5)
+
+DEPENDENCIES:
+  - MBProgressHUD
