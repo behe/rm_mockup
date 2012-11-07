@@ -10,5 +10,6 @@ Motion::Project::App.setup do |app|
   app.name = 'Readingrecs'
   app.pods do
     pod 'MBProgressHUD'
+    pod 'SVPullToRefresh'
   end
 end
